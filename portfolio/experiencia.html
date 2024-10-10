@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katherine Segovia - Acerca de mí</title>
+    <title>Katherine Segovia - Experiencia</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,9 +25,24 @@
 
     <div class="content">
         <main>
-            <section id="acerca-de-mi" class="section">
-                <h2>Acerca de mí</h2>
-                <p>Me gustaría aprender a programar y ser un desarrollador web en un futuro próximo. Soy docente y amo todo lo relacionado a programación y diseño de páginas web. Tengo experiencia con Python, pero con este Bootcamp de Programando+ Paraguay quiero expandir mis conocimientos en el área.</p>
+            <section id="experiencia" class="section">
+                <h2>Experiencia</h2>
+                <ul>
+                    <li>
+                        <strong>Empresa X</strong> (2022-presente)
+                        <ul>
+                            <li>Desarrollador web junior</li>
+                            <li>Responsable del desarrollo y mantenimiento de la página web de la empresa</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Empresa Y</strong> (2020-2022)
+                        <ul>
+                            <li>Diseñador web</li>
+                            <li>Responsable del diseño y maquetación de la página web de la empresa</li>
+                        </ul>
+                    </li>
+                </ul>
             </section>
         </main>
     </div>
@@ -37,6 +52,7 @@
     </footer>
 
     <script>
+        // Add event listener for DOMContentLoaded
         document.addEventListener('DOMContentLoaded', () => {
             const titulo = document.querySelector("h1");
             titulo.className = "animacion-titulo";
@@ -44,4 +60,3 @@
     </script>
 </body>
 </html>
-

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katherine Segovia - Acerca de mí</title>
+    <title>Katherine Segovia - Trabajos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,9 +25,13 @@
 
     <div class="content">
         <main>
-            <section id="acerca-de-mi" class="section">
-                <h2>Acerca de mí</h2>
-                <p>Me gustaría aprender a programar y ser un desarrollador web en un futuro próximo. Soy docente y amo todo lo relacionado a programación y diseño de páginas web. Tengo experiencia con Python, pero con este Bootcamp de Programando+ Paraguay quiero expandir mis conocimientos en el área.</p>
+            <section id="trabajos" class="section">
+                <h2>Trabajos</h2>
+                <ul>
+                    <li>Trabajo 1 - Detalle del trabajo</li>
+                    <li>Trabajo 2 - Detalle del trabajo</li>
+                    <li>Trabajo 3 - Detalle del trabajo</li>
+                </ul>
             </section>
         </main>
     </div>
@@ -37,11 +41,23 @@
     </footer>
 
     <script>
+        // Add event listener for DOMContentLoaded
         document.addEventListener('DOMContentLoaded', () => {
             const titulo = document.querySelector("h1");
+            
+            // Add the animation class to h1
             titulo.className = "animacion-titulo";
+        });
+
+        // Smooth scrolling script
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
     </script>
 </body>
 </html>
-
